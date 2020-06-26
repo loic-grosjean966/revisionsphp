@@ -9,7 +9,12 @@ Exercice : Créer une fonction sortArray() qui prend 1 argument de type "array" 
 
 // Fonction à créer ici
 //-------------------------------------------------------------------------
-
+function sortArray(array $numbers){
+    if(asort($numbers) === true){
+        return ($numbers);
+    }
+    
+}
 
 
 
