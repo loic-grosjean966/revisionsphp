@@ -9,7 +9,11 @@ Exercice : Créer une fonction getGoogleLogo() qui téléchargera le logo à l'a
 
 // Fonction à créer ici
 //-------------------------------------------------------------------------
-
+function getGoogleLogo(){
+    //On va récupérer l'image via l'url grâce à file_get_content et on la place dans le fichier logo_google.png
+    $content = file_get_contents('https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png');
+    file_put_contents('logos/logo_google.png', $content);
+}
 
 
 
